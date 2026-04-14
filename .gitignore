@@ -1,6 +1,7 @@
 ### Nuxt 4 / Nitro build output
 .nuxt/
 .output/
+.data/
 dist/
 
 ### Dependencies
