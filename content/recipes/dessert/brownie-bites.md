@@ -14,14 +14,14 @@ published: true
 
 ## Ingredients
 
-- 1/2 cup unsalted butter
-- 4 ounces dark chocolate
-- 3/4 cup sugar
-- 2 eggs
-- 1 teaspoon vanilla
-- 1/2 cup flour
-- 1/4 cup cocoa powder
-- 1/4 teaspoon salt
+- 1/2 cup unsalted **butter**
+- 4 ounces dark **chocolate**
+- 3/4 cup **sugar**
+- 2 **eggs**
+- 1 teaspoon **vanilla**
+- 1/2 cup **flour**
+- 1/4 cup **cocoa powder**
+- 1/4 teaspoon **salt**
 
 ## Tools
 

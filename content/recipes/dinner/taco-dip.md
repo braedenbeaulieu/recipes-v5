@@ -15,13 +15,13 @@ published: true
 
 ## Ingredients
 
-- 1 lb ground beef
-- 1 can refried beans
-- 1 package Old El Paso taco seasoning
-- 1 package Tex-Mex cheese
-- 1 small container sour cream
-- 2 bags Tostitos Scoops
-- 2/3 cup water
+- 1 lb **ground beef**
+- 1 can **refried beans**
+- 1 package Old El Paso **taco seasoning**
+- 1 package **Tex-Mex cheese**
+- 1 small container **sour cream**
+- 2 bags **Tostitos Scoops**
+- 2/3 cup **water**
 
 ## Tools
 

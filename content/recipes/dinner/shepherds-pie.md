@@ -15,17 +15,17 @@ published: true
 
 ## Ingredients
 
-- 1 lb ground beef
-- 8 potatoes, peeled and cubed
-- 1/2 medium onion, diced
-- 2 cloves garlic
-- 1/2 package cremini mushrooms, chopped
-- 1 tablespoon dried oregano
-- 1 can corn
-- 1 tablespoon butter
-- 1/4 cup milk
-- 1/4 cup breadcrumbs
-- Salt and pepper, to taste
+- 1 lb **ground beef**
+- 8 **potatoes**, peeled and cubed
+- 1/2 medium **onion**, diced
+- 2 cloves **garlic**
+- 1/2 package **cremini mushrooms**, chopped
+- 1 tablespoon **dried oregano**
+- 1 can **corn**
+- 1 tablespoon **butter**
+- 1/4 cup **milk**
+- 1/4 cup **breadcrumbs**
+- **salt** and **pepper**, to taste
 
 ## Tools
 

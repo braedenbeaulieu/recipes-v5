@@ -15,10 +15,10 @@ published: true
 
 ## Ingredients
 
-- 500 g white flour
-- 350 g water
-- 30 g fresh yeast or 10 g dry instant yeast
-- 10 g sea salt
+- 500 g white **flour**
+- 350 g **water**
+- 30 g fresh **yeast** or 10 g dry instant yeast
+- 10 g sea **salt**
 
 ## Tools
 

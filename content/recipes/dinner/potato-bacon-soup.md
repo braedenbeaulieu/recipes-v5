@@ -17,34 +17,30 @@ published: true
 
 ## Ingredients
 
-- 1 lb bacon, chopped
-- 8 potatoes, peeled and cubed
-- 2 cloves garlic, minced
-- 1/2 medium onion, diced
-- 1 cup flour
-- 1 teaspoon dried herbs
-- 1 cup heavy cream
-- 3 tablespoons butter
-- 1 litre chicken stock
+- 1 lb **bacon**, chopped
+- 8 **potatoes**, peeled and cubed
+- 2 cloves **garlic**, minced
+- 1/2 medium **onion**, diced
+- 1 cup **flour**
+- 1 teaspoon **dried herbs**
+- 1 cup **heavy cream**
+- 3 tablespoons **butter**
+- 1 litre **chicken stock**
 
-## Tools
+## Special Tools
 
 - Dutch oven or large pot
-- Small saucepan
-- Whisk
-- Wooden spoon
-- Knife and cutting board
 - Blender or immersion blender
 
 ## Directions
 
 ### Cook the bacon
 
-In a Dutch oven, cook the bacon over medium heat until crisp. Remove the bacon and set aside. Drain all but about 1/4 cup of the bacon grease.
+In a Dutch oven, cook the bacon over medium heat until crisp. Remove the it and set aside.
 
 ### Build the base
 
-Cook the onion in the reserved bacon drippings until translucent, about 5 minutes. Add the garlic and cook for 1–2 minutes. Add the cubed potatoes and toss to coat, sautéing for 3–4 minutes.
+Cook the onion in the left over fat until translucent, about 5 minutes. Add the garlic and cook for 1–2 minutes. Add the cubed potatoes and toss to coat, sautéing for 3–4 minutes.
 
 ### Simmer the potatoes
 
@@ -56,7 +52,7 @@ In a separate pan, melt the butter over medium heat. Whisk in the flour and cook
 
 ### Combine and finish
 
-Stir the cream mixture into the potato soup. Purée about half the soup and return it to the pot. Stir well and adjust seasoning to taste.
+Stir the cream mixture into the potato soup. Purée about half the soup and return it to the pot. Stir well and salt to taste.
 
 ## Notes
 

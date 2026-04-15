@@ -15,14 +15,14 @@ published: true
 
 ## Ingredients
 
-- 1 rack pork ribs
-- 1 cup BBQ sauce
-- 3 tablespoons brown sugar
-- 1 tablespoon garlic powder
-- 1 tablespoon onion powder
-- 1 tablespoon chili powder
-- 2 teaspoons smoked paprika
-- 2 teaspoons cumin
+- 1 rack **pork ribs**
+- 1 cup **BBQ sauce**
+- 3 tablespoons **brown sugar**
+- 1 tablespoon **garlic powder**
+- 1 tablespoon **onion powder**
+- 1 tablespoon **chili powder**
+- 2 teaspoons **smoked paprika**
+- 2 teaspoons **cumin**
 
 ## Tools
 

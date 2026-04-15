@@ -17,20 +17,20 @@ published: true
 
 ## Ingredients
 
-- 1 cup cooked rice (plus a little extra)
-- 2 eggs
-- 2 pork slices (or pork cutlets)
-- Soy sauce, to taste
-- Salt, to taste
-- Pepper, to taste
-- Garlic powder, to taste
-- 2 cloves garlic, minced
-- 1 small piece ginger, sliced
-- Bean sprouts, to taste
-- Green onion, chopped
-- Sesame oil, a small drizzle
-- Teriyaki sauce, to taste
-- Cooking oil
+- 1 cup cooked **rice** (plus a little extra)
+- 2 **eggs**
+- 2 **pork slices** (or pork cutlets)
+- **soy sauce**, to taste
+- **salt**, to taste
+- **pepper**, to taste
+- **garlic powder**, to taste
+- 2 cloves **garlic**, minced
+- 1 small piece **ginger**, sliced
+- **bean sprouts**, to taste
+- **green onions**, chopped
+- **sesame oil**, a small drizzle
+- **teriyaki sauce**, to taste
+- Cooking **oil**
 
 ## Tools
 

@@ -15,13 +15,13 @@ published: true
 
 ## Ingredients
 
-- 165 g whole wheat flour
-- 500 g white flour
-- 475 g water
-- 10 g fresh yeast or 3 g dry instant yeast
-- 15 g sugar
-- 1/4 cup vegetable oil
-- 15 g sea salt
+- 165 g **whole wheat flour**
+- 500 g **white flour**
+- 475 g **water**
+- 10 g fresh **yeast** or 3 g dry instant yeast
+- 15 g **sugar**
+- 1/4 cup **vegetable oil**
+- 15 g **sea salt**
 
 ## Tools
 

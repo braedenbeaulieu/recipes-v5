@@ -15,12 +15,12 @@ published: true
 
 ## Ingredients
 
-- 560 g bread flour
-- 370 g water
-- 11 g fine sea salt
-- 12 g fresh yeast
-- 10 g vegetable oil or olive oil
-- 5 g sugar or honey (optional, for fermentation and browning support)
+- 560 g **bread flour**
+- 370 g **water**
+- 11 g fine sea **salt**
+- 12 g fresh **yeast**
+- 10 g vegetable **oil** or olive oil
+- 5 g **sugar/honey** (optional, for fermentation and browning support)
 
 ## Tools
 

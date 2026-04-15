@@ -15,18 +15,18 @@ published: true
 
 ## Ingredients
 
-- 1 lb ground beef
-- 2 litres chicken stock
-- 1 medium onion, diced
-- 2 cloves garlic, minced
-- 1/2 can tomato paste
-- 1 teaspoon Worcestershire sauce
-- 2 tablespoons flour
-- 1/2 package cremini mushrooms, chopped
-- 1/2 cup carrots, chopped
-- 1 bag egg noodles
-- 1/2 cup sour cream
-- Salt, to taste
+- 1 lb **ground beef**
+- 2 litres chicken **stock**
+- 1 medium **onion**, diced
+- 2 cloves **garlic**, minced
+- 1/2 can **tomato paste**
+- 1 teaspoon **Worcestershire sauce**
+- 2 tablespoons **flour**
+- 1/2 package **cremini mushrooms**, chopped
+- 1/2 cup **carrots**, chopped
+- 1 bag **egg noodles**
+- 1/2 cup **sour cream**
+- **salt**, to taste
 
 ## Tools
 

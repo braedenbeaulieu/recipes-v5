@@ -15,17 +15,17 @@ published: true
 
 ## Ingredients
 
-- 2 chicken breasts, optionally frozen
-- 1 can black beans
-- 1 can corn
-- 1 large can diced tomatoes
-- 1/2 small can tomato paste
-- 1 cup salsa
-- 2 litres chicken stock
-- 1 package taco seasoning
-- 1 package Tex-Mex cheese
-- 1 small container sour cream
-- 1/4 bag tortilla chips, crushed
+- 2 **chicken breasts**, optionally frozen
+- 1 can **black beans**
+- 1 can **corn**
+- 1 large can **diced tomatoes**
+- 1/2 small can **tomato paste**
+- 1 cup **salsa**
+- 2 litres chicken **stock**
+- 1 package **taco seasoning**
+- 1 package **Tex-Mex cheese**
+- 1 small container **sour cream**
+- 1/4 bag **tortilla chips**, crushed
 
 ## Tools
 

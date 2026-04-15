@@ -15,18 +15,18 @@ published: true
 
 ## Ingredients
 
-- 1 pork tenderloin (large piece)
-- 1 cup ketchup
-- 2 1/2 tablespoons brown sugar
-- 2 1/2 tablespoons apple cider vinegar
-- 2 cups apple juice
-- 1 1/2 tablespoons Worcestershire sauce
-- 1 tablespoon spicy mustard
-- 1 1/2 teaspoons cumin
-- 1 tablespoon chili powder
-- 1 teaspoon garlic powder
-- 1 teaspoon onion powder
-- 6 kaiser rolls, split
+- 1 **pork tenderloin** (large piece)
+- 1 cup **ketchup**
+- 2 1/2 tablespoons **brown sugar**
+- 2 1/2 tablespoons **apple cider vinegar**
+- 2 cups **apple juice**
+- 1 1/2 tablespoons **Worcestershire sauce**
+- 1 tablespoon **spicy mustard**
+- 1 1/2 teaspoons **cumin**
+- 1 tablespoon **chili powder**
+- 1 teaspoon **garlic powder**
+- 1 teaspoon **onion powder**
+- 6 **kaiser rolls**, split
 
 ## Tools
 

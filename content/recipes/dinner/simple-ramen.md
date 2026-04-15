@@ -1,5 +1,4 @@
 ---
-
 title: Simple Chicken Ramen Bowl
 description: Quick upgrades to Mr. Noodles ramen with seared chicken, soy-sesame broth, and fresh toppings.
 prepTime: 10 mins
@@ -11,22 +10,21 @@ tags:
     - ramen
     - chicken
     - quick meal
-  published: true
-
+published: true
 ---
 
 ## Ingredients
 
-- 2 chicken breasts
-- Salt, to taste
-- Garlic powder, to taste
-- 1 package instant ramen noodles (Mr Noodles or similar)
-- 2 cups chicken stock
-- 1/2 cup bean sprouts
-- 2 sprigs green onion, chopped
-- 3 teaspoons soy sauce
-- 1 teaspoon sesame oil
-- Optional: chili oil (for serving)
+- 2 **chicken breasts**
+- **salt**, to taste
+- **garlic powder**, to taste
+- 1 package instant **ramen noodles** (Mr Noodles or similar)
+- 2 cups chicken **stock**
+- 1/2 cup **bean sprouts**
+- 2 sprigs **green onions**, chopped
+- 3 teaspoons **soy sauce**
+- 1 teaspoon **sesame oil**
+- Optional: **chili oil** (for serving)
 
 ## Tools
 

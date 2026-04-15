@@ -14,14 +14,14 @@ published: true
 
 ## Ingredients
 
-- 1 1/2 cups all-purpose flour
-- 2 tablespoons sugar
-- 1 tablespoon baking powder
-- 1/2 teaspoon salt
-- 1 1/4 cups milk
-- 1 egg
-- 3 tablespoons melted butter
-- 1 teaspoon vanilla extract
+- 1 1/2 cups all-purpose **flour**
+- 2 tablespoons **sugar**
+- 1 tablespoon **baking powder**
+- 1/2 teaspoon **salt**
+- 1 1/4 cups **milk**
+- 1 **egg**
+- 3 tablespoons melted **butter**
+- 1 teaspoon **vanilla** extract
 
 ## Tools
 

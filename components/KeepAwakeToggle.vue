@@ -194,12 +194,13 @@ watch(keepScreenAwake, (value) => {
 
 <style scoped>
 .keep-awake-toggle {
-  margin: 0.9rem 0 1.1rem;
+  margin: 0;
   padding: 0.75rem 0.9rem;
   border-radius: 14px;
   border: 1px solid var(--border);
   background: var(--content-bg);
-  max-width: 260px;
+  /* max-width: 260px; */
+  height: 60px;
 }
 
 .keep-awake-toggle__label {
@@ -210,6 +211,7 @@ watch(keepScreenAwake, (value) => {
   color: var(--text);
   cursor: pointer;
   user-select: none;
+  height: 100%;
 }
 
 .keep-awake-toggle__text {
@@ -238,9 +240,9 @@ watch(keepScreenAwake, (value) => {
   width: 46px;
   height: 28px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.28);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  box-shadow: inset 0 1px 0 var(--panel-soft);
   transition: background 0.15s ease, border-color 0.15s ease;
   pointer-events: none;
 }
@@ -248,23 +250,26 @@ watch(keepScreenAwake, (value) => {
 .keep-awake-toggle__switch::after {
   content: '';
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 1px;
+  left: 1px;
   width: 22px;
   height: 22px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--bg);
+  border: 1px solid var(--border);
   box-shadow: 0 6px 14px rgba(77, 53, 39, 0.12);
   transition: transform 0.15s ease;
 }
 
 .keep-awake-toggle__input:checked + .keep-awake-toggle__switch {
-  background: var(--accent-soft);
-  border-color: rgba(141, 75, 60, 0.38);
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: inset 0 1px 0 var(--panel-soft), 0 0 0 3px var(--accent-soft);
 }
 
 .keep-awake-toggle__input:checked + .keep-awake-toggle__switch::after {
   transform: translateX(18px);
+  border-color: var(--search-bg);
 }
 
 .keep-awake-toggle__input:focus-visible + .keep-awake-toggle__switch {

@@ -15,17 +15,17 @@ published: true
 
 ## Ingredients
 
-- 2 lb ground beef
-- 2 litres chicken stock or beef stock
-- 2 tablespoons olive oil
-- 1 medium onion, diced
-- 4 cloves garlic, minced
-- 1 can tomato paste
-- 1 can diced tomatoes
-- 4 medium cremini mushrooms, cut into chunks
-- 1 can black beans, drained and rinsed
-- 1 packet chili seasoning or taco seasoning
-- Salt and pepper, to taste
+- 2 lb **ground beef**
+- 2 litres chicken stock or beef **stock**
+- 2 tablespoons **olive oil**
+- 1 medium **onion**, diced
+- 4 cloves **garlic**, minced
+- 1 can **tomato paste**
+- 1 can **diced tomatoes**
+- 4 medium **cremini mushrooms**, cut into chunks
+- 1 can **black beans**, drained and rinsed
+- 1 packet **chili seasoning** or taco seasoning
+- **salt** and **pepper**, to taste
 
 ## Tools
 
