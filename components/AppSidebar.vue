@@ -181,3 +181,166 @@ const groupedItems = computed(() => {
     </div>
   </aside>
 </template>
+
+<style scoped lang="scss">
+.sidebar {
+  position: sticky;
+  top: 1.5rem;
+  height: calc(100vh - 3rem);
+  overflow-y: auto;
+  padding: 0;
+  background: var(--sidebar-bg);
+  border-radius: 22px;
+}
+
+.sidebar__inner {
+  min-height: 100%;
+  padding: 1.25rem;
+}
+
+.sidebar__mobile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.sidebar__toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.25);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.sidebar__toggle:focus {
+  outline: none;
+  border-color: rgba(141, 75, 60, 0.4);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.22);
+}
+
+.sidebar__toggle-icon {
+  transition: transform 0.15s ease;
+}
+
+.sidebar__toggle[aria-expanded="true"] .sidebar__toggle-icon {
+  transform: rotate(180deg);
+}
+
+.brand {
+  display: block;
+}
+
+.brand strong {
+  font-size: 2rem;
+}
+
+.sidebar__heading {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: var(--text);
+}
+
+.sidebar-accordion-enter-active,
+.sidebar-accordion-leave-active {
+  overflow: hidden;
+  transition: height 520ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: height;
+}
+
+.sidebar-accordion-enter-from,
+.sidebar-accordion-leave-to {
+  height: 0px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sidebar-accordion-enter-active,
+  .sidebar-accordion-leave-active {
+    transition: none;
+  }
+}
+
+.sidebar__search-wrap {
+  margin-top: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+
+.sidebar__search {
+  width: 100%;
+  padding: 0.8rem 0.95rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: var(--search-bg);
+  color: var(--text);
+  outline: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.sidebar__search::placeholder {
+  color: rgba(77, 53, 39, 0.65);
+}
+
+.sidebar__search:focus {
+  border-color: rgba(141, 75, 60, 0.4);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.22);
+}
+
+.sidebar__group + .sidebar__group {
+  margin-top: 1.25rem;
+}
+
+.sidebar__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar__link {
+  display: block;
+  color: var(--muted);
+  border-radius: 12px;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  padding: 0.6rem 0.75rem;
+  margin: 0.22rem 0;
+}
+
+.sidebar__link:hover,
+.sidebar__link.is-active {
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--text);
+  transform: translateX(2px);
+}
+
+.sidebar__empty {
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
+@media (max-width: 860px) {
+  .sidebar__toggle {
+    display: inline-flex !important;
+  }
+
+  .sidebar__panel {
+    display: none;
+  }
+
+  .sidebar__panel.is-open {
+    display: block;
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+    border-radius: 22px;
+    margin-bottom: 1rem;
+  }
+}
+</style>

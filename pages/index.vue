@@ -52,10 +52,10 @@ const groupedRecipes = computed(() => {
 </script>
 
 <template>
-  <div class="app-shell">
-    <AppSidebar :items="recipeItems" />
-
-    <main class="content-area">
+  <AppShell>
+    <template #sidebar>
+      <AppSidebar :items="recipeItems" />
+    </template>
       <header class="page-header">
         <h1>All Recipes</h1>
         <p>Pick a recipe from the sidebar or browse by category below.</p>
@@ -104,6 +104,130 @@ const groupedRecipes = computed(() => {
           </NuxtLink>
         </div>
       </section>
-    </main>
-  </div>
+  </AppShell>
 </template>
+
+<style scoped lang="scss">
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  margin: 0.35rem 0 0.5rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.page-header p {
+  max-width: 62ch;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.recipe-group + .recipe-group {
+  margin-top: 2.5rem;
+}
+
+.recipe-group h2 {
+  margin-bottom: 1rem;
+  font-size: 1.35rem;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr);
+  gap: 1rem;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.recipe-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.recipe-card__title {
+  margin: 0;
+  font-size: 1.7rem;
+  flex: 1;
+}
+
+.recipe-card p,
+.recipe-card__meta {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.recipe-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+  justify-content: flex-end;
+}
+
+.recipe-card__meta div {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--content-bg);
+  border-radius: 12px;
+  padding: 0.45rem 0.8rem;
+}
+
+.recipe-card__meta dt {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.meta-term {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 16px;
+}
+
+.meta-term svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.meta-term svg [stroke-width] {
+  stroke-width: 2.4;
+}
+
+.recipe-card__meta dd {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text);
+}
+
+@media (max-width: 860px) {
+  .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .recipe-card__meta {
+    justify-content: flex-start;
+  }
+}
+</style>

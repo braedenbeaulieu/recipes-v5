@@ -34,3 +34,34 @@ defineProps<{
     </div>
   </dl>
 </template>
+
+<style scoped lang="scss">
+.recipe-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.recipe-meta__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--content-bg);
+  border-radius: 12px;
+  padding: 0.45rem 0.8rem;
+}
+
+.recipe-meta__item dt {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.recipe-meta__item dd {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text);
+}
+</style>
