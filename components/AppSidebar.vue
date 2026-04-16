@@ -161,7 +161,7 @@ const groupedItems = computed(() => {
         <nav class="sidebar__nav" aria-label="Recipe navigation">
           <section v-for="(group, category) in groupedItems" :key="category" class="sidebar__group">
             <h2 class="sidebar__heading">
-              <NuxtLink :to="`/recipes/${category}/`">{{ formatCategory(category) }}</NuxtLink>
+              <NuxtLink :to="`/category/${category}/`">{{ formatCategory(category) }}</NuxtLink>
             </h2>
             <ul class="sidebar__list">
               <li v-for="item in group" :key="item.path">

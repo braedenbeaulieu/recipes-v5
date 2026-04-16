@@ -21,10 +21,16 @@ const { data: recipes } = await useAsyncData<RecipesCollectionItem[]>('recipes-t
     .all()
 )
 
+const toRecipeRoute = (path: string) => {
+  const parts = String(path || '').split('/').filter(Boolean)
+  const slug = parts[parts.length - 1] || ''
+  return `/recipes/${slug}/`
+}
+
 const recipeItems = computed(() =>
   (recipes.value || []).map((recipe: RecipesCollectionItem) => ({
     title: recipe.title,
-    path: recipe.path,
+    path: toRecipeRoute(recipe.path),
     category: recipe.path.split('/')[2] || 'uncategorized'
   }))
 )
@@ -97,7 +103,7 @@ useSeoMeta({
       <NuxtLink
         v-for="recipe in matchingRecipes"
         :key="recipe.path"
-        :to="recipe.path"
+        :to="toRecipeRoute(recipe.path)"
         class="recipe-card"
       >
         <div class="recipe-card__header">

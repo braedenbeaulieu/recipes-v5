@@ -5,13 +5,14 @@ import type { RecipesCollectionItem } from '@nuxt/content'
 import { formatCategory } from '~/utils/formatCategory'
 
 useSeoMeta({
-  title: 'Recipes',
+  title: 'All recipes',
   description: 'Browse recipes grouped by category.'
 })
 
 interface RecipeItem {
   title: string
   path: string
+  contentPath: string
   category: string
   description?: string
   prepTime?: string
@@ -28,16 +29,21 @@ const { data: recipes } = await useAsyncData<RecipesCollectionItem[]>('recipes-i
 )
 
 const recipeItems = computed<RecipeItem[]>(() =>
-  (recipes.value || []).map((recipe: RecipesCollectionItem): RecipeItem => ({
-    title: recipe.title,
-    path: recipe.path,
-    category: recipe.path.split('/')[2] || 'uncategorized',
-    description: recipe.description,
-    prepTime: recipe.prepTime,
-    totalTime: recipe.totalTime,
-    servings: recipe.servings,
-    difficulty: recipe.difficulty
-  }))
+  (recipes.value || []).map((recipe: RecipesCollectionItem): RecipeItem => {
+    const slug = recipe.path.split('/').pop() || ''
+
+    return {
+      title: recipe.title,
+      path: `/recipes/${slug}/`,
+      contentPath: recipe.path,
+      category: recipe.path.split('/')[2] || 'uncategorized',
+      description: recipe.description,
+      prepTime: recipe.prepTime,
+      totalTime: recipe.totalTime,
+      servings: recipe.servings,
+      difficulty: recipe.difficulty
+    }
+  })
 )
 
 const groupedRecipes = computed(() => {
@@ -63,12 +69,12 @@ const groupedRecipes = computed(() => {
 
       <section v-for="(group, category) in groupedRecipes" :key="category" class="recipe-group">
         <h2>
-          <NuxtLink :to="`/recipes/${category}/`">{{ formatCategory(category) }}</NuxtLink>
+          <NuxtLink :to="`/category/${category}/`">{{ formatCategory(category) }}</NuxtLink>
         </h2>
         <div class="recipe-grid">
           <NuxtLink
             v-for="recipe in group"
-            :key="recipe.path"
+            :key="recipe.contentPath"
             :to="recipe.path"
             class="recipe-card"
           >

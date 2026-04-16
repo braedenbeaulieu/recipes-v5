@@ -19,7 +19,7 @@ const slugifyTag = (value: string) =>
 <template>
   <header class="page-header page-header--recipe">
     <p class="page-header__eyebrow">
-      <NuxtLink :to="`/recipes/${categorySlug}/`">{{ categorySlug }}</NuxtLink>
+      <NuxtLink :to="`/category/${categorySlug}/`">{{ categorySlug }}</NuxtLink>
     </p>
     <h1>{{ recipePage.title }}</h1>
     <p v-if="recipePage.description">{{ recipePage.description }}</p>

@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css', 'simplebar/dist/simplebar.css'],
   app: {
     head: {
-      title: 'Recipe Book',
+      title: 'Recipes',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'A docs-style recipe book powered by Nuxt Content.' }
@@ -14,7 +14,12 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/': { prerender: true },
+    '/recipes': { redirect: { to: '/', statusCode: 302 } },
+    '/recipes/': { redirect: { to: '/', statusCode: 302 } },
     '/recipes/**': { prerender: true },
+    '/category': { prerender: true },
+    '/category/': { prerender: true },
+    '/category/**': { prerender: true },
     '/tags/**': { prerender: true }
   },
   nitro: {
