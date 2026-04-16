@@ -221,7 +221,7 @@ watch(isOpen, (value) => {
   padding: 0.65rem 0.9rem;
   border-radius: 14px;
   border: 1px solid var(--border);
-  background: var(--content-bg);
+  background: var(--panel);
   color: var(--text);
   cursor: pointer;
   user-select: none;
@@ -244,7 +244,7 @@ watch(isOpen, (value) => {
 .grocery-modal__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.18);
+  background: var(--overlay);
 }
 
 .grocery-modal__panel {
@@ -270,7 +270,7 @@ watch(isOpen, (value) => {
 
 .grocery-modal__close {
   border: 1px solid var(--border);
-  background: var(--content-bg);
+  background: var(--panel);
   color: var(--text);
   border-radius: 12px;
   padding: 0.45rem 0.65rem;
@@ -387,7 +387,7 @@ watch(isOpen, (value) => {
 
 .grocery-modal__action {
   border: 1px solid var(--border);
-  background: var(--content-bg);
+  background: var(--panel);
   color: var(--text);
   border-radius: 12px;
   padding: 0.55rem 0.8rem;

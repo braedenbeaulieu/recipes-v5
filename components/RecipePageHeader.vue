@@ -6,6 +6,14 @@ defineProps<{
   categorySlug: string
   contentRoot?: HTMLElement | null
 }>()
+
+const slugifyTag = (value: string) =>
+  value
+    .toLowerCase()
+    .trim()
+    .replace(/['"]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
 </script>
 
 <template>
@@ -17,7 +25,14 @@ defineProps<{
     <p v-if="recipePage.description">{{ recipePage.description }}</p>
     <p v-if="recipePage.tags?.length" class="recipe-tags">
       <span class="screen-reader-text">Tags</span>
-      <span v-for="tag in recipePage.tags" :key="tag" class="tag">{{ tag }}</span>
+      <NuxtLink
+        v-for="tag in recipePage.tags"
+        :key="tag"
+        class="tag"
+        :to="`/tags/${slugifyTag(tag)}/`"
+      >
+        {{ tag }}
+      </NuxtLink>
     </p>
 
     <RecipeMeta
@@ -68,7 +83,8 @@ defineProps<{
   margin: 0.2rem 0.3rem 0.2rem 0;
   padding: 0.35rem 0.6rem;
   border-radius: 999px;
-  background: var(--toc-bg);
+  background: var(--surface-subtle);
+  border: 1px solid var(--surface-subtle-border);
   color: var(--text);
   font-size: 0.85rem;
 }

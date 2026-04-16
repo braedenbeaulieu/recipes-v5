@@ -71,13 +71,28 @@ const { ingredientToast, ingredientToastPosition } = useIngredientEnhancements(r
   max-width: 860px;
 }
 
+:deep(main.content-area) {
+  padding: 1.5rem clamp(0.75rem, 2.5vw, 2rem) 3rem;
+}
+
+@media (max-width: 1180px) {
+  .recipe-page {
+    max-width: none;
+  }
+}
+
+@media (max-width: 860px) {
+  :deep(main.content-area) {
+    padding: 1.25rem 1rem 2.5rem;
+  }
+}
+
 :deep(.recipe-prose) {
-  background: var(--content-bg);
+  background: var(--surface-raised);
   border: 1px solid var(--border);
   border-radius: calc(var(--radius) + 4px);
   padding: clamp(1.25rem, 3vw, 2rem);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(3px);
 }
 
 :deep(.recipe-prose :where(h2, h3, h4)) {
@@ -87,17 +102,21 @@ const { ingredientToast, ingredientToastPosition } = useIngredientEnhancements(r
 :deep(.recipe-prose h2) {
   margin-top: 2.25rem;
   font-size: 1.55rem;
+  color: var(--text);
+  letter-spacing: -0.01em;
 }
 
 :deep(.recipe-prose h3) {
   margin-top: 1.5rem;
   font-size: 1.15rem;
+  color: var(--text);
+  letter-spacing: -0.01em;
 }
 
 :deep(.recipe-prose p),
 :deep(.recipe-prose li) {
-  color: #5a4033;
-  line-height: 1.75;
+  color: var(--muted);
+  line-height: 1.8;
 }
 
 :deep(.recipe-prose ul),
@@ -106,7 +125,7 @@ const { ingredientToast, ingredientToastPosition } = useIngredientEnhancements(r
 }
 
 :deep(.recipe-prose code) {
-  background: rgba(255, 255, 255, 0.35);
+  background: var(--code-bg);
   border-radius: 6px;
   padding: 0.15rem 0.4rem;
 }
@@ -122,19 +141,18 @@ const { ingredientToast, ingredientToastPosition } = useIngredientEnhancements(r
 :deep(.ingredient-ref) {
   display: inline;
   font: inherit;
+  font-weight: 600;
   color: var(--accent);
-  background: var(--accent-soft);
-  border: 1px solid var(--border);
+  background: var(--accent-fill);
+  border: 1px solid var(--accent-border);
   border-radius: 10px;
   padding: 0.05em 0.35em;
   margin: 0;
   cursor: pointer;
-  text-decoration: none;
-  // text-underline-offset: 0.15em;
 }
 
 :deep(.ingredient-ref:hover) {
-  background: var(--panel-soft);
+  background: var(--accent-fill-hover);
 }
 
 :deep(.ingredient-ref:focus) {

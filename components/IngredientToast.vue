@@ -46,6 +46,7 @@ defineProps<{
   box-shadow: var(--shadow);
   color: var(--text);
   animation: ingredient-toast-in 160ms ease-out;
+  font-weight: 700;
 }
 
 @media (min-width: 861px) {

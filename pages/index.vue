@@ -134,7 +134,7 @@ const groupedRecipes = computed(() => {
 
 .recipe-grid {
   display: grid;
-  grid-template-columns: minmax(240px, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
 }
 
@@ -146,21 +146,41 @@ const groupedRecipes = computed(() => {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.25rem;
-  box-shadow: var(--shadow);
+  padding: 1.1rem 1.15rem;
+  box-shadow: var(--shadow-soft);
+  transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
+  text-decoration: none;
+  container-type: inline-size;
+}
+
+.recipe-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-border-soft);
+  box-shadow: var(--shadow-lift);
+}
+
+.recipe-card:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--accent-soft), var(--shadow-lift);
 }
 
 .recipe-card__header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.85rem;
 }
 
 .recipe-card__title {
   margin: 0;
-  font-size: 1.7rem;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
   flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .recipe-card p,
@@ -169,10 +189,17 @@ const groupedRecipes = computed(() => {
   margin-bottom: 0;
 }
 
+.recipe-card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .recipe-card__meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.5rem;
   margin: 0;
   justify-content: flex-end;
 }
@@ -181,9 +208,10 @@ const groupedRecipes = computed(() => {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--content-bg);
+  background: var(--surface-subtle);
+  border: 1px solid var(--surface-subtle-border);
   border-radius: 12px;
-  padding: 0.45rem 0.8rem;
+  padding: 0.4rem 0.65rem;
 }
 
 .recipe-card__meta dt {
@@ -201,8 +229,8 @@ const groupedRecipes = computed(() => {
 }
 
 .meta-term svg {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   display: block;
 }
 
@@ -214,6 +242,18 @@ const groupedRecipes = computed(() => {
   margin: 0;
   font-weight: 600;
   color: var(--text);
+}
+
+@container (max-width: 520px) {
+  .recipe-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .recipe-card__meta {
+    justify-content: flex-start;
+    width: 100%;
+  }
 }
 
 @media (max-width: 860px) {

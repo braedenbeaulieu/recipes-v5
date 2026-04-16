@@ -1,5 +1,5 @@
 ---
-title: Baked Taco Dip
+title: Taco Dip
 description: Cheesy layered taco dip with seasoned beef, refried beans, and sour cream, perfect for scooping.
 prepTime: 20 mins
 cookTime: 40 mins
@@ -9,7 +9,6 @@ difficulty: Easy
 tags:
     - party
     - appetizer
-    - baked
 published: true
 ---
 
@@ -25,10 +24,7 @@ published: true
 
 ## Tools
 
-- Cast iron pan or oven-safe skillet
-- Oven
-- Wooden spoon or spatula
-- Measuring cup
+- Cast iron pan or oven-safe skillet or just use a normal pan and an oven safe dish
 
 ## Directions
 

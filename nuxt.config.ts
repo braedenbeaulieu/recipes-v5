@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-04-14',
   devtools: { enabled: true },
   modules: ['@nuxt/content'],
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css', 'simplebar/dist/simplebar.css'],
   app: {
     head: {
       title: 'Recipe Book',
@@ -14,7 +14,8 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/': { prerender: true },
-    '/recipes/**': { prerender: true }
+    '/recipes/**': { prerender: true },
+    '/tags/**': { prerender: true }
   },
   nitro: {
     prerender: {

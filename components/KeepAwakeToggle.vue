@@ -198,7 +198,7 @@ watch(keepScreenAwake, (value) => {
   padding: 0.75rem 0.9rem;
   border-radius: 14px;
   border: 1px solid var(--border);
-  background: var(--content-bg);
+  background: var(--panel);
   /* max-width: 260px; */
   height: 60px;
 }
@@ -257,7 +257,7 @@ watch(keepScreenAwake, (value) => {
   border-radius: 999px;
   background: var(--bg);
   border: 1px solid var(--border);
-  box-shadow: 0 6px 14px rgba(77, 53, 39, 0.12);
+  box-shadow: var(--shadow-float);
   transition: transform 0.15s ease;
 }
 
@@ -274,7 +274,7 @@ watch(keepScreenAwake, (value) => {
 
 .keep-awake-toggle__input:focus-visible + .keep-awake-toggle__switch {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.22);
+  box-shadow: 0 0 0 4px var(--accent-soft);
 }
 
 .keep-awake-toggle__input:disabled {

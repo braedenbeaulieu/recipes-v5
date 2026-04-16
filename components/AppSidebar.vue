@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import SimpleBar from 'simplebar-vue'
 import { formatCategory } from '~/utils/formatCategory'
 
 interface SidebarItem {
@@ -112,7 +113,8 @@ const groupedItems = computed(() => {
 
 <template>
   <aside class="sidebar">
-    <div class="sidebar__inner">
+    <SimpleBar class="sidebar__scroll">
+      <div class="sidebar__inner">
       <div class="sidebar__mobile-header">
         <NuxtLink to="/" class="brand">
           <strong>Recipe Book</strong>
@@ -179,6 +181,7 @@ const groupedItems = computed(() => {
         </div>
       </Transition>
     </div>
+    </SimpleBar>
   </aside>
 </template>
 
@@ -187,10 +190,37 @@ const groupedItems = computed(() => {
   position: sticky;
   top: 1.5rem;
   height: calc(100vh - 3rem);
-  overflow-y: auto;
+  overflow: hidden;
   padding: 0;
   background: var(--sidebar-bg);
   border-radius: 22px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+}
+
+.sidebar__scroll {
+  height: 100%;
+}
+
+.sidebar__scroll :deep(.simplebar-track.simplebar-vertical) {
+  width: 10px;
+  top: var(--scrollbar-inset);
+  bottom: var(--scrollbar-inset);
+}
+
+.sidebar__scroll :deep(.simplebar-track.simplebar-vertical) {
+  background: transparent;
+}
+
+.sidebar__scroll :deep(.simplebar-scrollbar:before) {
+  background: var(--scrollbar-thumb);
+  border-radius: 999px;
+  left: 2px;
+  right: 2px;
+}
+
+.sidebar__scroll :deep(.simplebar-scrollbar:hover:before) {
+  background: var(--scrollbar-thumb-hover);
 }
 
 .sidebar__inner {
@@ -212,16 +242,16 @@ const groupedItems = computed(() => {
   width: 42px;
   height: 42px;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid var(--border);
+  background: var(--panel);
   color: var(--text);
   cursor: pointer;
 }
 
 .sidebar__toggle:focus {
   outline: none;
-  border-color: rgba(141, 75, 60, 0.4);
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.22);
+  border-color: var(--accent-border-strong);
+  box-shadow: 0 0 0 4px var(--accent-soft);
 }
 
 .sidebar__toggle-icon {
@@ -237,7 +267,8 @@ const groupedItems = computed(() => {
 }
 
 .brand strong {
-  font-size: 2rem;
+  font-size: 1.9rem;
+  letter-spacing: -0.02em;
 }
 
 .sidebar__heading {
@@ -276,20 +307,20 @@ const groupedItems = computed(() => {
   width: 100%;
   padding: 0.8rem 0.95rem;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--border);
   background: var(--search-bg);
   color: var(--text);
   outline: none;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 1px 0 var(--panel-soft);
 }
 
 .sidebar__search::placeholder {
-  color: rgba(77, 53, 39, 0.65);
+  color: var(--placeholder);
 }
 
 .sidebar__search:focus {
-  border-color: rgba(141, 75, 60, 0.4);
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.22);
+  border-color: var(--accent-border-strong);
+  box-shadow: 0 0 0 4px var(--accent-soft);
 }
 
 .sidebar__group + .sidebar__group {
@@ -313,9 +344,16 @@ const groupedItems = computed(() => {
 
 .sidebar__link:hover,
 .sidebar__link.is-active {
-  background: rgba(255, 255, 255, 0.4);
+  background: var(--surface-hover);
   color: var(--text);
   transform: translateX(2px);
+}
+
+.sidebar__link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--accent-soft);
+  background: var(--surface-hover);
+  color: var(--text);
 }
 
 .sidebar__empty {
@@ -339,8 +377,13 @@ const groupedItems = computed(() => {
   .sidebar {
     position: static;
     height: auto;
+    overflow: visible;
     border-radius: 22px;
     margin-bottom: 1rem;
+  }
+
+  .sidebar__scroll {
+    height: auto;
   }
 }
 </style>

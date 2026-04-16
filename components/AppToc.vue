@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import SimpleBar from 'simplebar-vue'
+
 defineProps<{
   links?: Array<{
     id: string
@@ -15,7 +17,8 @@ defineProps<{
 
 <template>
   <aside class="toc" v-if="links?.length">
-    <div class="toc__inner">
+    <SimpleBar class="toc__scroll">
+      <div class="toc__inner">
       <p class="toc__title">On the menu</p>
       <ul class="toc__list">
         <li v-for="link in links" :key="link.id">
@@ -32,6 +35,7 @@ defineProps<{
         </li>
       </ul>
     </div>
+    </SimpleBar>
   </aside>
 </template>
 
@@ -40,10 +44,37 @@ defineProps<{
   position: sticky;
   top: 1.5rem;
   height: calc(100vh - 3rem);
-  overflow-y: auto;
+  overflow: hidden;
   padding: 0;
   background: var(--toc-bg);
   border-radius: 22px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+}
+
+.toc__scroll {
+  height: 100%;
+}
+
+.toc__scroll :deep(.simplebar-track.simplebar-vertical) {
+  width: 10px;
+  top: var(--scrollbar-inset);
+  bottom: var(--scrollbar-inset);
+}
+
+.toc__scroll :deep(.simplebar-track.simplebar-vertical) {
+  background: transparent;
+}
+
+.toc__scroll :deep(.simplebar-scrollbar:before) {
+  background: var(--scrollbar-thumb);
+  border-radius: 999px;
+  left: 2px;
+  right: 2px;
+}
+
+.toc__scroll :deep(.simplebar-scrollbar:hover:before) {
+  background: var(--scrollbar-thumb-hover);
 }
 
 .toc__inner {
@@ -71,11 +102,20 @@ defineProps<{
   display: block;
   color: var(--muted);
   border-radius: 12px;
-  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
-  padding: 0.35rem 0;
+  transition: background 0.15s ease, color 0.15s ease;
+  padding: 0.35rem 0.5rem;
+  margin: 0.1rem 0;
 }
 
 .toc__link:hover {
+  color: var(--text);
+  background: var(--surface-hover);
+}
+
+.toc__link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--accent-soft);
+  background: var(--surface-hover);
   color: var(--text);
 }
 
@@ -97,7 +137,12 @@ defineProps<{
   .toc {
     position: static;
     height: auto;
+    overflow: visible;
     border-radius: 22px;
+  }
+
+  .toc__scroll {
+    height: auto;
   }
 }
 </style>

@@ -47,7 +47,8 @@ defineProps<{
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--content-bg);
+  background: var(--panel-soft);
+  border: 1px solid var(--border-soft);
   border-radius: 12px;
   padding: 0.45rem 0.8rem;
 }
